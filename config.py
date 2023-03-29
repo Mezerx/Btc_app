@@ -1,5 +1,6 @@
 bot_token = "6055698659:AAEPnST5AWCvjz1LRt8pEbHAnhoVfscWaQ8"
 tg_admin_id = 809854135
+api_url = "http://127.0.0.1:8000"
 
 
 fake_database = {'users':[

@@ -65,3 +65,8 @@ def read_user(user_id: str, query: str | None = None):
     if query:
         return {"item_id": user_id, "query": query}
     return {"item_id": user_id}
+
+@api.get("/get_user_wallet/{user_id:int}")
+@crud.db_session
+def get_user_wallet(user_id):
+    return crud.get_wallet_info(crud.User[user_id].wallet)
